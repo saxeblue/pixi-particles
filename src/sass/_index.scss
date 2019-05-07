@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@mixin boxsuper(){
+	margin-top: 10%;
+
+	@include mq($pc){
+		margin-top: 40px;
+	}
+}
+
+.page-title{
+	@include remFont(24);
+	margin-top: 5%;
+	text-align: center;
+
+	@include mq($pc){
+		margin-top: 20px;
+	}
+}
+
+.idx-wrap{
+	width: 90%;
+	margin: 10% auto;
+
+	@include mq($pc){
+		max-width: 600px;
+		margin-top: 60px;
+	}
+}
+
+
+.idx-pixi{
+
+
+	@include be(sub-title){
+		@include remFont(18);
+		margin-bottom: 2%;
+		background: #EEE;
+		text-align: center;
+
+		@include mq($pc){
+			margin-bottom: 15px;
+		}
+	}
+
+
+	@include be(vendor){
+		@include boxsuper;
+
+		@include be(text){
+			@include remFont(14);
+		}
+	}
+
+	@include be(lists){
+
+		@include be(item){
+			@include remFont(14);
+
+			&:not(first-child){
+				margin-top: 2%;
+
+				@include mq($pc){
+					margin-top: 10px;
+				}
+			}
+		}
+
+		a{
+			color: #000;
+		}
+	}
+	
+
+	@include be(main){
+		@include boxsuper;
+	}
+
+	@include be(attentions){
+		margin-top: 5%;
+
+		@include mq($pc){
+			margin-top: 40px;
+		}
+
+		@include be(title){
+			@include remFont(14);
+		}
+
+		@include be(text){
+			@include remFont(12);
+		}
+	}
+
+	@include be(reference){
+		@include boxsuper;
+	}
+}
