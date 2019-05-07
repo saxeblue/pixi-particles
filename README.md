@@ -34,7 +34,8 @@ brew install automake autoconf libtool dpkg pkgconfig nasm libpng
 | ---- | ---- |
 | gsap | 1.20.1 |
 | rxjs | 6.3.3 |
-| howler | 2.1.1 |
+| PixiJs | 4.8.7 |
+| pixi-particles | 4.0.1 |
 
 
 
