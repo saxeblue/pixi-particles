@@ -19,7 +19,7 @@
 	},
 	"acceleration": {
 		"x": 0,
-		"y": -10
+		"y": -50
 	},
 	"maxSpeed": 0,
 	"startRotation": {
@@ -33,7 +33,7 @@
 	},
 	"lifetime": {
 		"min": 3,
-		"max": 10
+		"max": 30
 	},
 	"blendMode": "normal",
 	"ease": [
